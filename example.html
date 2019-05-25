@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="navigation.css">
+        <!-- <link rel="stylesheet" href="popup.css"> -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"> 
+    <link rel="stylesheet" href="navigation.css">
+         
+        <title>Team</title>
+    </head>
+    <body>
+        <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class ="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
+              <li class="navigation__item"><a href="plot.html" class="navigation__link">Plot</a></li>
+              <li class="navigation__item"><a href="Gameplay.html" class="navigation__link">Gameplay</a></li>
+              <li class="navigation__item"><a href="team.html" class="navigation__link">Team</a></li>  
+            
+            </ul>  
+        </nav>
+        </div>
+        
+        <h1>An example:<br><br></h1>
+        <h2>So finally, you're here after reading through the Plot and Gameplay pages I've made you read! (or atleast I hope you've read them.) <br>
+		Through this example I hope you understand how all the bits and pieces you've been reading make up the whole game. Before I begin I should mention that most of the pictures I have here were made by me, but if you see color anywhere then those image(s) have most likely been taken from the net and photoshopped on.<br><br>
+		
+		<i>MAPS: <br><br></i>
+		If you have read through <a href="plot.html#Themes">the Plot,</a> you'd know one of the main themes for the game is <b>Journey</b>. Thus, maps and the way the player travels through them is a vital part of the game as, if done well, it gives the "travelling adventure" vibe and I dare say even forms the backbone of the game. <br> <br>  </h2>
+        <a href="pic.html#pic_a"><img id="pic_a" style="  float: left;width: 48.33%;padding:1rem;height:360px; display:relative;vertical-align: middle;" src="4site/Ys.jpg"></a>	
+        <a href="pic.html#pic_b"><img id="pic_a" style="float: left;width: 48.33%;padding:1rem;height:360px; display:relative;vertical-align: middle;" src="4site/14986t-Carte_officielle___Sylvarant.jpg"> </a>
+        <h2>
+        First, the player is shown where they're at in the world map. They see where they are and where they want to go, and then click on the place they are currently at to see the route. This opens another smaller map showing their immediate surroundings, like this one: <br><br>
+        <a href="pic.html#pic_c"><img id="pic_a" style="padding:1rem;width:700px;height:400px; display:block;vertical-align:middle;  margin-left: auto;margin-right: auto;" src="4site/forest1.jpg"></a> <br><br>
+        Here, you basically click the small nodes and work your way accross till you reach the end of the map.
+		This image was taken from the middle of the map; scrolling left would take you to the starting point and scrolling right to the end of the location (like to the edge of the forest and into the next location). Maps start at a single point and branch out, giving players many ways to traverse. If you haven't already noticed, this style has been 'inspired' by Slay the Spire, and apart from some nodes reserved for story events, each node leads to different outcomes like combat, treasure, meeting new characters, character interactions due to the location (like when the cast of a JRPG is near the beach, you sure as hell know what's gonna happen next) or other scenarios.   
+
+		<i>COMBAT: <br><br></i>
+		This is the first tutorial fight of the game. One aspect I'm trying to incorporate is that the player shouldn't remember the move (like Thunderbolt), they should remember <i>what it does</i>. This will help when you want to make your own solutions, like if you have a water mage and yourself in a party and you want to cast Thunder on their water spells, you can <i>Talk</i> to them to devise a strategy or <i>Attack</i> their water spell with Thunder thereby combining both spells.  <br><br>
+		This is a completely cooked up scenario, but imagine you've got Nappa, the villain, running towards Eva to trample her. 
+		<a href="pic.html#pic_d"><img id="pic_a" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/attack0.jpg"> </a>
+    	You can click on her name to see her status (everything above her name is one big button that shows the 'status' screen below) - 
+		<a href="pic.html#pic_f"><img id="pic_c" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/bg2.png"></a>
+		Back to the story, our hero has a couple options, namely to dodge or counterattack - 
+		<a href="pic.html#pic_e"><img id="pic_b" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/attack1.png"></a>
+    	She chooses <i>Recall,</i> a move that rewinds time and unleashes any attack made during the course of the battle at the enemy.
+    	This leads to a small scene of Eva recalling some rocks -
+    	<a href="pic.html#pic_g"><img id="pic_d" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/bg12.png"></a>
+    	And slamming it into Nappa (sorry I didn't draw him getting pwned). <br><br>
+        Behind the scenes: <br>
+        There's a few functions like [damage calculator], ... and ... Basically, when you choose an attack it's damage is compared to the opponent's attack (if someone's attacking) or (put simply,) their defense or agility (if they're defending or evading). You can string attacks together to multiply it's damage or add effects (this works for defence and others as well).There are turns and stamina to prevent misuse of OP moves, and ... well honestly listing out the entire gameplay is tiring so if you're interested, maybe come chat a while?  
+
+    	Dialogue: <br><br>
+        Screen is divided in 2 - There's a box ('viewport') for dialogue to the left, and one for showing character expressions to the right. I wanted something that read like a novel and was as expressive as a comic, and this is what I got. With sound effects and branching storylines, this becomes a damn good experience.   
+
+    	<a href="pic.html#pic_h"><img id="pic_e" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/CHOICE_Border2.jpg"></a>
+		<a href="pic.html#pic_i"><img id="pic_f" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/CHOICE_Border3.jpg"></a>
+		<a href="pic.html#pic_j"><img id="pic_g" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/CHOICE_Border.jpg"></a>
+		<a href="pic.html#pic_k"><img id="pic_h" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/counter1.png"></a>
+
+		<a href="pic.html#pic_l"><img id="pic_i" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/counter2.png"></a>
+
+        Of course, it needs more work and polish but it's an <i>interesting</i> way to tell a story, and one I definitely see potential in.   
+
+
+
+    </h2>
+
+
+		
+</body>
+</html>

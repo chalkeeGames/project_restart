@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="navigation.css">
+        <!-- <link rel="stylesheet" href="popup.css"> -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"> 
+
+    <link rel="stylesheet" href="navigation.css">
+         
+        <title>Gameplay</title>
+    </head>
+    <body>
+        <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class ="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="index.html" class="navigation__link">About</a></li>
+              <li class="navigation__item"><a href="plot.html" class="navigation__link">Plot</a></li>
+              <li class="navigation__item"><a href="Gameplay.html" class="navigation__link">Gameplay</a></li>
+              <li class="navigation__item"><a href="team.html" class="navigation__link">Team</a></li>  
+            
+            </ul>  
+        </nav>
+        </div>
+        <h1>Gameplay elements:</h1>
+        <h2>
+Maps: <br><br>
+Maps are the equivalent of walking in the game. Exploration and travel will be primarily through buttons and maps. Here's one way it might look like:  
+<!-- Everything starts here. If you have read through <a href="plot.html#Themes">the Plot,</a> you'd know one of the main themes for the game is <b>Journey</b>. Maps and the way the player travels through them is a vital part of the game as, if done well, it gives the "travelling adventure" vibe and forms a cornerstone of the game.  --><br> <br>
+        <a href="pic.html#pic_a"><img id="pic_a" style="  float: left;width: 48.33%;padding:1rem;height:360px; display:relative;vertical-align: middle;" src="4site/Ys.jpg"></a>    
+        <a href="pic.html#pic_b"><img id="pic_a" style="float: left;width: 48.33%;padding:1rem;height:360px; display:relative;vertical-align: middle;" src="4site/14986t-Carte_officielle___Sylvarant.jpg"> </a>
+        <h2>
+        First, the player is shown where they're at in the world map. They see where they are (say, the arrow) and where they want to go (the cart in the forest), and then click on the place they are currently at to see the route. This opens another smaller map showing their immediate surroundings, like this one: <br><br>
+        <a href="pic.html#pic_c"><img id="pic_a" style="padding:1rem;width:700px;height:400px; display:block;vertical-align:middle;  margin-left: auto;margin-right: auto;" src="4site/forest1.jpg"></a> <br><br>
+        This image was taken from the middle of the map; scrolling left would take you to the starting point and scrolling right to the end of the location (like to the edge of the forest and into the next location). Maps start at a single point and branch out, giving players many ways to traverse. (PS the icons for the maps below were 'inspired' by Slay the Spire) <br><br>
+        Here, you basically click the small nodes and work your way accross till you reach the end of the map. Each node leads to different outcomes like combat, treasure, meeting new characters, character interactions due to the location or other scenarios. <br><br>
+
+        So, you click on the first, starting node. It shows the following screens:
+
+                <a href="pic.html#pic_h"><img id="pic_e" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/CHOICE_Border2.jpg"></a>
+                Clicking on/touching the screen takes you forward (click on the images to see them bigger)-
+        <a href="pic.html#pic_i"><img id="pic_f" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/CHOICE_Border3.jpg"></a>
+        <a href="pic.html#pic_j"><img id="pic_g" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/CHOICE_Border.jpg"></a>
+        <a href="pic.html#pic_k"><img id="pic_h" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/counter1.png"></a>
+
+        <a href="pic.html#pic_l"><img id="pic_i" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/counter2.png"></a>
+
+        </h2><h3>Of course, it needs more work and polish but it's an <i>interesting</i> way to tell a story, and one I definitely see potential in.</h3>
+        <h2>The dialogue ends with the old lady asking for money despite Eva's charms, and Eva running away without looking back. <br><br>
+
+        A bit later Eva finds herself in her first battle, which is the tutorial battle for the player. Honestly, the simplest way I can describe it (which would be wrong, but bear with me) is a Pokemon battle with more images. There are 2 things which make it different from Pokemon: <br><br>
+        1.   The fights are <i>reactive</i>, not turn based: This basically means you can react to attacks. So if someone casts frost on you, unlike turn based systems where you just take damage you can counter it by an even stronger attack, a weaker attack of fire (if fire>frost) as well as  dodging or blocking it, or even using the environment to fend off the attack. <br><br>
+        2.  Everything focusses on <b>Narrative</b>: You are not fighting a battle, you are living it, just like how you feel when you read a nice action book. You might have a limited set of moves but seemingly unlimited ways of using them. There is a heavy layer of abstraction over the player which makes them feel they aren't using moves like 'flamethrower' in every battle but using fire in different ways like 'shooting flames that reduced their wooden shield to ashes'. I have been working on a 'Narrative engine' that takes in the player's attack (flamethrower), the enemy's move (raising shield to defend), does damage calculation (taking into consideration that fire burns wood) and outputs the narrative you've read above.  <br><br>
+        This is a completely cooked up scenario, but imagine you've got the villain running towards Eva to smack her. 
+        <a href="pic.html#pic_d"><img id="pic_a" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/attack0.jpg"> </a>
+        Firstly, whenever the player wants they can click on their character's name to see their status - 
+        <a href="pic.html#pic_f"><img id="pic_c" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/bg2.png"></a>
+        Back to the story, our hero has a couple options, namely to dodge or counterattack - 
+        <a href="pic.html#pic_e"><img id="pic_b" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/attack1.png"></a>
+        She chooses <i>Recall,</i> a move that rewinds time and unleashes any attack made during the course of the battle at the enemy.
+        This leads to a small scene of Eva recalling some rocks -
+        <a href="pic.html#pic_g"><img id="pic_d" style="padding:1rem;width:640px;height:360px; display:block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="4site/bg12.png"></a>
+        And slamming it into Nappa (sorry I didn't draw him getting hit, but you get the idea, she stopped his attack by attacking him instead. The turn ends once everyone has made a move, <i>which can be out of order</i>). <br><br>
+
+
+Other mechanics: <br>
+ <b>RPG:</b> <br>
+The game uses the usual rpg systems like levels, skills, items and a bit of crafting. <br><br>
+<b>Mini-games:</b> <br>
+Darkness: You are in a dark cave and the only light is a small green flicker the size of your cursor conjured by the Prince. Expecting some nice spooky atmosphere, character interactions and jump scares! <br><br>
+Chase in the maze: Standard baddies chasing hero in a city like maze, with the hero able to confuse the baddies by manipulating time. Adds variety to the game. <br><br>
+
+That's all the gameplay I have. It might be simple, but simple is good. I don't want to reinvent the wheel, and this much is doable even for me.
+        
+<!-- The most useful way I’ve found of thinking about this is by imagining 3 circles, one inside the other. Each circle represents a ‘pillar’ of the game. The innermost (core) circle would be ‘choose your own adventure style rpg’, the second one would be ‘reactive turn based combat’ and the wrapper all around would be ‘narrative focus’. <br><br>
+
+1.  Narration focused: <br> 
+Narrative is key. <br><br>
+I have also been working on the narration engine which, kinda like an animation engine outputs customized narration for individual scenes, making the action flow fluidly and making the game feel more like reading an high octane action novel.<br><br>
+2.  Reactive turn based system: <br>
+This means that there are no numbers, stats or any metrics visible to the player, so they won't be making decisions based solely on numbers. This isn’t a ‘game’, a quick stab can kill you just as well as a fireball. 
+This is kinda hard to explain so read it with the example below. How does a typical turn-based system work? You have the player’s phase, where they do their own thing, and then an enemy phase where they do their own thing, and this repeats till one party’s health finishes. Here, the system is different; the battles are reactive – when you attack, the enemy can immediately react either by defending, evading or counter-attacking. This makes the game fast paced and strategic – do you attack with your entire party, or leave some out in case of a counterattack? If the enemy attacks, should you dodge or block? Keep in mind that if the enemy gets closer, he might just stab you down.  <br><br>
+3.  RPG: <br>
+The game uses the usual rpg systems like levels, skills and a bit of crafting.  <br><br> -->
+
+
+</h2>
+    </body>
+</html>
