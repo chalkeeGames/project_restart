@@ -20,6 +20,16 @@ body {
   padding: 3rem; padding-top: 0rem; padding-right: 13rem;
   box-sizing: border-box;
    }
+
+@media only screen and (max-width: 400px) {
+  body {
+    padding-right: 3rem;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    padding-right: 8rem;
+    }
 h2 {
   font-weight: normal;
 }
